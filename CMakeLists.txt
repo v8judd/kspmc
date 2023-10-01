@@ -9,13 +9,13 @@ find_package(Qt6 6.4 REQUIRED COMPONENTS Quick)
 qt_standard_project_setup()
 
 qt_add_executable(appksp-mc
-    main.cpp
+    src/main.cpp
 )
 
 qt_add_qml_module(appksp-mc
     URI ksp-mc
     VERSION 1.0
-    QML_FILES Main.qml
+    QML_FILES Main.qml ui/Launch.qml
 )
 
 set_target_properties(appksp-mc PROPERTIES
